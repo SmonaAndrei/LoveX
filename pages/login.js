@@ -1,10 +1,12 @@
-import Link from "next/link";
 export default function Login() {
   return (
-    <div style={{ fontFamily: "Arial, sans-serif", padding: 40, textAlign: "center" }}>
-      <h1>🔐 Autentificare</h1>
-      <p>(Demo) Formular de login.</p>
-      <p style={{ marginTop: 20 }}><Link href="/">⟵ Înapoi la Home</Link></p>
+    <div style={{ textAlign: "center", marginTop: "50px" }}>
+      <h1>Autentificare</h1>
+      <form>
+        <input type="email" placeholder="Email" /><br/><br/>
+        <input type="password" placeholder="Parola" /><br/><br/>
+        <button type="submit">Login</button>
+      </form>
     </div>
   );
 }
